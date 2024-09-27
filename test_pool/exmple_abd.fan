@@ -61,3 +61,11 @@ htlist.to.list|quick.快速排序
 end
     
     
+
+min.is.ints.give.int
+
+min.fan.
+  branch0..ints_0.less,ints_1
+  true..int.set.ints_0
+  false..int.set.ints_1
+end

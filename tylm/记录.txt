@@ -1,0 +1,46 @@
+min.is.ints.give.int
+
+min.fan.
+branch0..ints_0.less,ints_1
+true..int.set.ints_0
+false..int.set.ints_1
+end
+
+由于缺乏循环分支，我现在补充一个
+temp.fan.int
+
+true_loop..temp.less.100
+  一些操作
+end
+
+这种语法这里的fan实际意义和define差不多，能用这种语法完成关于自己的编译器实现吗，引用内容和转义符号与C++相同
+（情景就是相当于用其他语言完成了编译器的制作，现在这种语言自己编程实现自己的编译器）
+
+gpt:
+compiler.define
+  // 定义语法规则
+  rule.program
+    statement_list
+  end
+
+  rule.statement_list
+    statement
+    statement_list
+  end
+
+  rule.statement
+    min.is.ints.give.int
+    temp.fan.int
+  end
+
+  rule.temp
+    true_loop..temp.less.100
+      // 一些操作
+    end
+  end
+end
+
+// 编译器主逻辑
+compiler.run
+  // 解析和执行逻辑
+end

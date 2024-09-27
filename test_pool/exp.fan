@@ -3,17 +3,17 @@
 
 .to.int|pm.后移
 
-fm.def.
+fm.fan.
     int.minus.1
 end
 
-pm.def.
+pm.fan.
     int.add.1
 end
 
-stack.have.
-    core.t.t_group
-    top.t.int
+stack.fan.
+    core.fan.group
+    top.fan.int
 end
 
 data.to.stack|push.压栈
